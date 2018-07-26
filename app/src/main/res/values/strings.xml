@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Movies Library</string>
+    <string name="add">+</string>
+    <string name="options_menu">Options menu</string>
+    <string name="movies_list">List Of Movies</string>
+    <string name="subject">Subject:</string>
+    <string name="body">Body:</string>
+    <string name="url">URL</string>
+    <string name="show">Show</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search:</string>
+    <string name="go">GO</string>
+    <string name="enter_subject">Enter a subject</string>
+    <string name="enter_body">Enter a body</string>
+    <string name="enter_url">Enter an URL</string>
+    <string name="enter_search">Enter a movie name to search</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_all">Delete all</string>
+    <string name="show_image">Press show to see the image</string>
+    <string name="rate">Rating:</string>
+</resources>

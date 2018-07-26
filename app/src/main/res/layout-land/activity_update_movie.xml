@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".UpdateMovie"
+    android:background="@color/grayblack">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewSubject"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="@string/subject"
+                android:textColor="@color/gray2"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/enter_subject"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewBody"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:text="@string/body"
+            android:textColor="@color/gray2"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editBody"
+            android:layout_width="493dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:filterTouchesWhenObscured="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="2.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/viewUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="@string/url"
+                android:textColor="@color/gray2"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/editUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1.5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/enter_url"
+                android:inputType="textUri"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/show"
+                android:textColor="@color/gray4"
+                android:background="@color/orange"/>
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/showImage"
+        android:layout_width="113dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/defualt_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:id="@+id/rateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/rate"
+        android:textColor="@color/gray2"
+        android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/rateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textColor="@color/gray2"
+            android:textSize="17sp" />
+
+        <RatingBar
+            android:id="@+id/movieRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:isIndicator="false"
+            android:numStars="10"
+            android:rating="0"
+            android:stepSize=".1"
+            android:theme="@style/RatingBar"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:textColor="@color/gray4"
+                android:background="@color/orange"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/gray4"
+                android:background="@color/orange"/>
+        </LinearLayout>
+
+</LinearLayout>
